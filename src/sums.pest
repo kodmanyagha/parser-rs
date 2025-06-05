@@ -1,0 +1,16 @@
+// Whitespace is inserted between everything non atomic
+WHITESPACE = _{ " " | "\t" }
+
+// @makes it atomic avoiding spaces between repetitions
+// + means repeat at least once
+number = @{ ASCII_DIGIT+ }
+
+brackets = { "(" ~ sub ~ ")" }
+
+item = { brackets | number }
+
+// ? means 1 or zero times
+div = { item ~ ("/" ~ div)? }
+mul = { div ~ ("*" ~ mul)? }
+add = { mul ~ ("+" ~ add)? }
+sub = { add ~ ("-" ~ sub)? }
