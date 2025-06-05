@@ -7,3 +7,5 @@ BODMAS stands for Bracket, Of, Division, Multiplication, Addition, and Subtracti
 PEDMAS which stands for Parentheses, Exponents, Division, Multiplication, Addition, and Subtraction
 
 Tutorial link: https://www.udemy.com/course/writing-parsers-in-rust-with-gobble
+
+Other project: https://github.com/kodmanyagha/parser-mech-rs
